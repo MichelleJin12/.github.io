@@ -3,8 +3,16 @@
 ### what is ACID properties?
 
 <ol>
-Atomicity  
+Atomicity
+  
+  
 Consistency  
+
+
 Isolation  
+
+
 Durability  
+
+
 </ol>
