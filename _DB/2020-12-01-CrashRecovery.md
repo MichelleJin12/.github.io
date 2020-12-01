@@ -5,14 +5,14 @@
 <ol>
 Atomicity
   
-  
-Consistency  
+
+Consistency
 
 
-Isolation  
+Isolation
 
 
-Durability  
+Durability
 
 
 </ol>
