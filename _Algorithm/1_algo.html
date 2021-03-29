@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>프로그래머스 코딩테스트 연습 해시</h1>
+    <h2>완주하지 못한 선수</h2>
+    <div class="code">
+        def solution(participant, completion):<br>
+        dic = {}<br>
+        for man in completion:<br>
+        if man in dic:<br>
+        dic[man] += 1<br>
+        else:<br>
+        dic[man] = 1<br>
+        for man in participant:<br>
+        if not man in dic:<br>
+        return man<br>
+        else:<br>
+        dic[man] -= 1<br>
+        if dic[man] < 0:<br>
+        return man
+    </div>
+</body>
+
+
+</html>
