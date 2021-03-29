@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1>programmers coding test hash</h1>
+    <h2>Phone book</h2>
+    <div class="code">
+        def solution(phone_book):<br>
+        phone_book = sorted(phone_book)<br>
+        for i in range(0, len(phone_book)):<br>
+        for j in range(i + 1, len(phone_book)):<br>
+        if phone_book[i][0] == phone_book[j][0] and len(phone_book[i]) < len(phone_book[j]):<br>
+        if phone_book[i] in phone_book[j]:<br>
+        return False<br>
+        else:<br>
+        break<br>
+        return True<br>
+    </div>
+</body>
+
+
+</html>
