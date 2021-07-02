@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1000px; /* 전체 화면에 원근감을 준다 */
+}
+
+.flip-btn{
+    width:200px;
+    height:100px;
+    color: white;
+    text-align: center;
+    line-height: 100px; /* line-height 와 height 의 값을 일치시키면 세로 기준 중앙으로 옴 */
+    transform-style: preserve-3d; /* 해당 클래스의 하위에 있는 태그들은 3d로 된다 */
+    transition: .5s; /* 애니매이션을 5초동안 보여주게 바뀜*/
+    cursor: pointer;
+}
+
+.flip-btn:hover{
+    transform: rotateX(-90deg);
+}
+
+
+.front{
+    background-color: goldenrod;
+    height : 100px ;
+    transform: translateZ(50px);
+}
+
+.back{
+    background-color: darkgoldenrod;
+    height: 100px;
+    transform: rotateX(90deg) translateZ(150px); /* 객체를 이동시켜주는 translate 는 각 객체의 좌표 값 기준으로 이동함*/
+}
